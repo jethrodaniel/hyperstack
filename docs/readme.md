@@ -4,15 +4,15 @@
 
 Hyperstack is a Ruby-based DSL and modern web toolkit for building spectacular, interactive web applications fast!
 
-+ **One language** throughout the client and server. All Ruby code is compiled by [Opal](https://opalrb.com/) into JavaScript automatically.
-+ Webpacker and Yarn tooling for a **modern, fast hot-reloader build environment with Ruby source maps**.
-+ A well documented and stable Ruby DSL for wrapping **React** and **ReactRouter** as well as **any** JavaScript library or component. No need to learn JavaScript!
-+ **Isomorphic Models with bi-directional data** so you can access your models as if they were on the client.
+- **One language** throughout the client and server. All Ruby code is compiled by [Opal](https://opalrb.com/) into JavaScript automatically.
+- Webpacker and Yarn tooling for a **modern, fast hot-reloader build environment with Ruby source maps**.
+- A well documented and stable Ruby DSL for wrapping **React** and **ReactRouter** as well as **any** JavaScript library or component. No need to learn JavaScript!
+- **Isomorphic Models with bi-directional data** so you can access your models as if they were on the client.
 
 All that means you can write simple front-end code like this:
 
 ```ruby
-class GoodBooksToRead < Hyperstack::Component
+class GoodBooksToRead < HyperComponent
   render(UL) do
     Book.good_books.each do |book|
       LI { "Read #{book.name}" }.on(:click) { display book } if book.available?
@@ -27,7 +27,7 @@ In the code above, if the `good_books` scope changed (even on the server), the U
 
 + Website: [hyperstack.org](https://hyperstack.org)
 
-Our website serves as a Hyperstack example application. All the doc content is loaded dynamically from this repo and converted to HTML on the fly. It uses React Semantic UI and a client-side JavaScript full-text search engine. Its a Rails app hosted on Heroku.
+Our website serves as a Hyperstack example application. All the doc content is loaded dynamically from this repo and converted to HTML on the fly. It uses React Semantic UI and a client-side JavaScript full-text search engine. It's a Rails app hosted on Heroku.
 
 ## Setup and installation
 
@@ -42,23 +42,30 @@ As it gives a minimal understanding of the Hyperstack framework.
 
 Hyperstack is supported by a friendly, helpful community, both for users, and contributors. We welcome new people, please reach out and say hello.
 
-+ Reach us at: [Slack chat](https://hyperstack.org/slack-invite)
++ [Join](https://hyperstack.org/slack-invite) our new Slack group
++ After you have joined there is a shortcut at https://hyperstack.org/slack
+
+### StackOverflow Questions
+
+Please ask technical questions on StackOverflow as the answers help people in the future. We use the `hyperstack` tag, but also add `ruby-on-rails`, `ruby` and `react-js` tags to get this project exposed to a broader community.
+
++ Please ask questions here: https://hyperstack.org/question
++ All the `hyperstack` tagged questions are here: https://hyperstack.org/questions
 
 ## Roadmap
 
 Hyperstack is evolving; we are improving it all the time. As much as we love Ruby today, we see ourselves embracing new languages in the future. [Crystal](https://crystal-lang.org/) perhaps? We are also watching [Wasm](https://webassembly.org/) carefully.
 
-Please see the [ROADMAP](https://github.com/hyperstack-org/hyperstack/blob/edge/ROADMAP.md) for more information.
+Please see the  [ROADMAP][] file for more information.
+
+[roadmap]: ROADMAP.md
+[current status]: current-status.md
 
 ## Contributing
 
-In general, if you would like to help in any way, please read the [CONTRIBUTING](https://github.com/hyperstack-org/hyperstack/blob/edge/CONTRIBUTING.md) file for suggestions.  
-System setup for the development of Hyperstack itself is documented in this file.
+If you would like to help, please read the [CONTRIBUTING][] file for suggestions.
 
-More specifically, we have a [Feature Matrix](https://github.com/hyperstack-org/hyperstack/blob/edge/docs/feature_matrix.md) that needs to be filled with missing features.
-The idea is that you can check here what the implementation status is of a Ruby (on Rails) feature.
-And if you have the time and skill you're more then encouraged to implement or fix one or two.
-But if you're not in a position to contribute code, just expanding and maintaining this table would be excellent.
+[contributing]: CONTRIBUTING.md
 
 ## Links
 
@@ -69,12 +76,13 @@ But if you're not in a position to contribute code, just expanding and maintaini
 
 ## License
 
-Hyperstack is developed and released under the MIT License. See the [LICENSE](https://github.com/hyperstack-org/hyperstack/blob/edge/LICENSE) file for further details.
+Released under the MIT License.  See the [LICENSE][] file for further details.
+
+[license]: LICENSE
 
 ## History
 
-Hyperstack is an evolution of [Ruby-Hyperloop](https://github.com/ruby-hyperloop). We decided to rename the project to drop the Ruby suffix and also took the opportunity to simplify the repos and project overall.  
-Hyperloop was started by the developers of the reactrb gem.
+Hyperstack is an evolution of [Ruby-Hyperloop](https://github.com/ruby-hyperloop). We decided to rename the project to drop the Ruby suffix and also took the opportunity to simplify the repos and project overall.
 
 + Old website: http://ruby-hyperloop.org/
 + Old Github: https://github.com/ruby-hyperloop

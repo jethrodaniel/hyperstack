@@ -2,14 +2,14 @@
 
 [![Build Status](https://travis-ci.org/hyperstack-org/hyperstack.svg?branch=edge)](https://travis-ci.org/hyperstack-org/hyperstack)
 
-This is the edge branch - the system is stable, and there are approx 1000 test specs passig.  For current status on development see [current status.](https://github.com/hyperstack-org/hyperstack/blob/edge/current-status.md)
+This is the edge branch - the system is stable, and there are approximately 1,000 test specs passing.
 
 Hyperstack is a Ruby-based DSL and modern web toolkit for building spectacular, interactive web applications fast!
 
-+ **One language** throughout the client and server. All Ruby code is compiled by [Opal](https://opalrb.com/) into JavaScript automatically.
-+ Webpacker and Yarn tooling for a **modern, fast hot-reloader build environment with Ruby source maps**.
-+ A well documented and stable Ruby DSL for wrapping **React** and **ReactRouter** as well as **any** JavaScript library or component. No need to learn JavaScript!
-+ **Isomorphic Models with bi-directional data** so you can access your models as if they were on the client.
+- **One language** throughout the client and server. All Ruby code is compiled by [Opal](https://opalrb.com/) into JavaScript automatically.
+- Webpacker and Yarn tooling for a **modern, fast hot-reloader build environment with Ruby source maps**.
+- A well documented and stable Ruby DSL for wrapping **React** and **ReactRouter** as well as **any** JavaScript library or component. No need to learn JavaScript!
+- **Isomorphic Models with bi-directional data** so you can access your models as if they were on the client.
 
 All that means you can write simple front-end code like this:
 
@@ -27,11 +27,11 @@ In the code above, if the `good_books` scope changed (even on the server), the U
 
 ## Website and documentation
 
-Please see the website for full documentation, or find the same content in the [/docs](/docs) folder in this repo if you prefer.
+Please see the website for full documentation, or find the same content in the [docs](/docs) folder in this repo if you prefer.
 
 + Website: [hyperstack.org](https://hyperstack.org)
 
-Our website serves as a Hyperstack example application. All the doc content is loaded dynamically from this repo and converted to HTML on the fly. It uses React Semantic UI and a client-side JavaScript full-text search engine. Its a Rails app hosted on Heroku.
+Our website serves as a Hyperstack example application. All the doc content is loaded dynamically from this repo and converted to HTML on the fly. It uses React Semantic UI and a client-side JavaScript full-text search engine. It's a Rails app hosted on Heroku.
 
 ## Setup and installation
 
